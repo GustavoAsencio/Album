@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="Frontend/style.css">
+</head>
+
+<body background="papas.svg">
+    <h2 style="text-align:center">9 sitios turisticos para visitar</h2>
+    <div class="row">
+        <div class="column">
+            <img src="img/blueLagoon.jpg" style="width: 100%  " onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/MachuPicchu.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/stonehenge.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/Redentor.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/Atenea.jpg" id="queso" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/Eiffel.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/Muralla.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/Piramides.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/Cataratas.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 9</div>
+                <img src="img/blueLagoon.jpg" style="width:100%">
+                <h3>The Blue Lagoon, Islandia</h3>
+                <p>Islandia es, sin duda, uno de los mejores destinos de viaje; ha aumentado exponencialmente su interés en los últimos años. El destino número 1 en Islandia es La Laguna Azul. El año pasado, tuvo un número récord de visitantes internacionales de 700.000.</p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 9</div>
+                <img src="img/MachuPicchu.jpg" style="width:100%">
+                <h3>Machu Picchu, Perú</h3>
+                <p>Los turistas cada vez se interesan más por América del Sur, ya que buscan lugares menos conocidos en el mundo. Machu Picchu es uno de los iconos más reconocidos del continente y las cifras de turismo lo reflejan. </p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 9</div>
+                <img src="img/stonehenge.jpg" style="width:100%">
+                <h3>Stonehenge, Reino Unido</h3>
+                <p>Este conjunto de monumentos históricos de piedra data de 2000 a 3000 a.C. Es un punto de referencia icónico y uno de los símbolos y atraccciones turísticas más conocidas del Reino Unido. Desde que Stonehenge se agregó a la lista del Patrimonio Mundial de la UNESCO en 1982, los visitantes anuales se han disparado a 1.3 millones de turistas por año. ¿Te gustaría visitar este atractivo turístico? </p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 9</div>
+                <img src="img/Redentor.jpg" style="width:100%">
+                <h3>Cristo Redentor, Brasil</h3>
+                <p>Probablemente hayas visto las fotos de tus amigos de brazos abiertos debajo de la enorme réplica blanca de Cristo. La estatua es conocida como Cristo Redentor y arroja su sombra sobre unos 1.8 millones de visitantes por año. </p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 9</div>
+                <img src="img/Atenea.jpg" style="width:100%">
+                <h3>Acrópolis de Atenas, Grecia</h3>
+                <p>Estas antiguas ruinas de Atenas cuelgan sobre el acantilado escénico de Grecia. A pesar de los proyectos de restauración en curso, multitudes de curiosos continúan acudiendo al sitio año tras año. La comunidad se está preparando para la gran cantidad de 4.5 millones de visitantes internacionales este año.</p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 9</div>
+                <img src="img/Eiffel.jpg" style="width:100%">
+                <h3>Torre Eiffel, Francia</h3>
+                <p>Situada en el corazón de París, la ciudad más romántica del mundo, la Torre Eiffel se ha convertido en un símbolo universal de los viajes. Una visita a la Torre Eiffel encabeza muchas listas de categorías, algo no sorprendente teniendo en cuenta que unos 7 millones de visitantes al año se toman fotografías bajo el edificio de 81 pisos. No importa la hora en la que acudas, siempre habrá gente admirando este ícono francés.</p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 9</div>
+                <img src="img/Muralla.jpg" style="width:100%">
+                <h3>La Gran Muralla China</h3>
+                <p>Considerada una de las estructuras más grandes hechas por el hombre en el mundo, la Gran Muralla China se extiende por más de 21.000 kilómetros. Al recibir 10 millones de turistas cada año, es beneficioso saber cuál es el mejor momento para visitarlo. El otoño es sin duda el momento más lindo para llegar, pero desafortunadamente aún es temporada alta de turismo. </p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 9</div>
+                <img src="img/Piramides.jpg" style="width:100%">
+                <h3>La Gran Pirámide de Giza, Egipto</h3>
+                <p>Puede ser sorprendente saber que un desierto desolado en el Medio Oriente se ha convertido en una de las mejores atracciones turísticas del mundo, a menos que consideres que muchas personas desean desesperadamente visitar la Gran Pirámide de Giza, una de las 7 maravillas oficiales del mundo antiguo. La tumba que fue construida alrededor de 2500 a.C. ahora es responsable de recibir más de 14.7 millones de visitantes por año.</p>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 9</div>
+                <img src="img/Cataratas.jpg" style="width:100%">
+                <h3>Cataratas del Niágara, EE. UU./ Canadá</h3>
+                <p>Entre las atracciones turísticas más populares del mundo se encuentran las imponentes Cataratas del Niágara. Están ubicadas en la frontera de Nueva York y Ontario, Canadá, siendo un conjunto masivo de 3 cascadas. Más de 6 millones de pies cúbicos de agua brotan sobre las cataratas cada minuto. Actualmente, el sitio recibe a 30 millones de turistas por año.</p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/blueLagoon.jpg" style="width:100%" onclick="currentSlide(1)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/MachuPicchu.jpg" style="width:100%" onclick="currentSlide(2)" >
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/stonehenge.jpg" style="width:100%" onclick="currentSlide(3)" >
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/Redentor.jpg" style="width:100%" onclick="currentSlide(4)" >
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/Atenea.jpg" style="width:100%" onclick="currentSlide(5)" >
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/Eiffel.jpg" style="width:100%" onclick="currentSlide(6)" >
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/Muralla.jpg" style="width:100%" onclick="currentSlide(7)" >
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/Piramides.jpg" style="width:100%" onclick="currentSlide(8)" >
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/Cataratas.jpg" style="width:100%" onclick="currentSlide(9)" >
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="backend/main.js"></script>
+</body>
+
+</html>
